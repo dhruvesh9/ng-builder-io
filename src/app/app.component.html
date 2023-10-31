@@ -1,0 +1,16 @@
+<!-- Optional nav for demonstration -->
+<p-menubar [model]="items">
+  <ng-template pTemplate="start">
+      <img src="https://primefaces.org/cdn/primeng/images/primeng.svg" height="40" class="mr-2" />
+  </ng-template>
+</p-menubar>
+
+
+<!-- You need router-outlet here -->
+<div class="main">
+  <pre>This section loads Builder pages unless page not found, in which case it loads the PageNotFoundComponent from the  Angular app.</pre>
+  <hr size="2px" color="black">
+  <router-outlet></router-outlet> 
+</div>
+
+<builder-component model="ads"></builder-component>

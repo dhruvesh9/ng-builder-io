@@ -1,0 +1,5 @@
+<div #colorChangeDiv class="card flex justify-content-center" style="height: 500px;">
+  <p-dropdown [options]="colors" [(ngModel)]="selectedColor" optionLabel="name"></p-dropdown>
+  <br><br>
+  <p-button label="Change" (onClick)="changeColor()"></p-button>
+</div>

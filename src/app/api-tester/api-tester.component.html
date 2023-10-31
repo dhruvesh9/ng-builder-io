@@ -1,0 +1,12 @@
+<div class="card flex justify-content-center">
+  <input type="text" pInputText [(ngModel)]="apiUrl" style="width: 500px;"/>
+  <br /><br />
+  <p-button label="Hit" (onClick)="sendRequest()"></p-button>
+  <br /><br />
+  <div class="card flex justify-content-center">
+    <p-panel header="Response">
+      <strong>{{ responseCode }}</strong>
+      <pre>{{ responseBody | json }}</pre>
+    </p-panel>
+  </div>
+</div>

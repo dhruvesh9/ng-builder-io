@@ -9,13 +9,14 @@ import { DropdownModule } from 'primeng/dropdown';
 import { InputTextModule } from 'primeng/inputtext';
 import { MenubarModule } from 'primeng/menubar';
 import { PanelModule } from 'primeng/panel';
-import { environment } from 'src/environment';
+
 import { ApiTesterComponent } from './api-tester/api-tester.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { SimpleColorChangerComponent } from './simple-component/simple-color-changercomponent';
+import { environment } from 'src/environments/environment';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,7 @@ import { SimpleColorChangerComponent } from './simple-component/simple-color-cha
     ApiTesterComponent,
   ],
   imports: [
-    BuilderModule.forRoot(environment.API_KEY),
+    BuilderModule.forRoot(environment.BUILDER_API_KEY),
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
